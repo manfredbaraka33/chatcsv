@@ -162,7 +162,7 @@ const QuestionBox = ({ isEnabled, chatHistory, setChatHistory, sessionId }) => {
   };
 
   return (
-    <div className="p-6 bg-gray-800 dark:bg-gray-800 rounded-xl shadow-2xl flex flex-col h-full">
+    <div className="p-6 dark:bg-gray-800 rounded-xl shadow-2xl flex flex-col h-full">
       <h2 className="text-2xl font-extrabold text-indigo-600 mb-4 flex items-center justify-between">
         <span>3. Ask Questions</span>
         <button className="cursor-pointer" onClick={() => setIsExpanded(true)}>
