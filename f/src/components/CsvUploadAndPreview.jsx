@@ -53,33 +53,7 @@ const CsvUploadAndPreview = ({
   // -------------------
   // Backend preprocess
   // -------------------
-  // const handlePreprocess = async () => {
-  //   if (!file) return alert("Please upload a CSV first.");
-
-  //   const formData = new FormData();
-  //   formData.append("file", file);
-
-  //   try {
-  //     const res = await fetch("http://127.0.0.1:8000/upload", { method: "POST", body: formData });
-  //     const data = await res.json();
-
-  //     if (data.status === "ready") {
-  //       // ✅ send session ID + DQR preview to parent
-  //       onDataProcessed({
-  //         session_id: data.session_id,
-  //         preview: data.summary.dqr_preview ? [data.summary.dqr_preview.split(",")] : [],
-  //       });
-  //       alert("CSV preprocessing done! You can now ask questions.");
-  //       setShowModal(false);
-  //     } else {
-  //       alert("Preprocessing failed.");
-  //     }
-  //   } catch (err) {
-  //     console.error("Preprocess error:", err);
-  //     alert("Failed to preprocess CSV.");
-  //   }
-  // };
-
+  
   const handlePreprocess = async () => {
   if (!file) return alert("Please upload a CSV first.");
 
@@ -89,7 +63,7 @@ const CsvUploadAndPreview = ({
   formData.append("headerRowIndex", headerRowIndex);
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/upload", {
+    const res = await fetch("https://chatcsv-production-c7d2.up.railway.app/upload", {
       method: "POST",
       body: formData,
     });
