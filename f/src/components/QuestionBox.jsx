@@ -90,7 +90,7 @@ const QuestionBox = ({ isEnabled, chatHistory, setChatHistory, sessionId }) => {
       formData.append('session_id', sessionId);
       formData.append('query', userMessage);
 
-      const res = await fetch('http://127.0.0.1:8000/chat', {
+      const res = await fetch('https://chatcsv-production-c7d2.up.railway.app/chat', {
         method: 'POST',
         body: formData,
       });
