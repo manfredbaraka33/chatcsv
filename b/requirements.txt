@@ -1,0 +1,24 @@
+# --- Core Web Framework ---
+fastapi
+uvicorn
+
+# --- CORS ---
+python-multipart
+
+# --- Data Handling ---
+pandas
+
+# --- LangChain / LangGraph Ecosystem ---
+langchain-core
+langchain-openai
+langchain-groq
+langgraph
+
+# --- Output Formatting / Prompt Tools ---
+markdown
+tabulate
+
+# --- Optional but useful for notebooks or debugging ---
+ipython
+
+dotenv
