@@ -26,7 +26,7 @@ function App() {
   return (
     <div className='min-h-screen pt-4 px-2 bg-linear-to-br from-indigo-50 via-white to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900'>
       <center>
-        <h1 className='text-white text-3xl sm:text-4xl font-extrabold text-center bg-clip-text'>
+        <h1 className='text-gray-500 text-3xl sm:text-4xl font-extrabold text-center bg-clip-text'>
           CSV Intelligence Dashboard
         </h1>
       </center>
