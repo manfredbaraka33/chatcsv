@@ -34,14 +34,29 @@ function App() {
       <div className="flex flex-col lg:flex-row items-start justify-start p-2 sm:p-6 space-y-4 lg:space-y-0 lg:space-x-6">
 
         <div className="flex-1 w-full">
-          <CsvUploadAndPreview
+          {/* <CsvUploadAndPreview
             onDataProcessed={handleDataProcessed}
             isProcessing={isProcessing}
             dataPreview={dataPreview}
             headerRowIndex={headerRowIndex}
             setHeaderRowIndex={setHeaderRowIndex}
             isFileUploaded={isFileUploaded}
+          /> */}
+
+          <CsvUploadAndPreview
+            onDataProcessed={handleDataProcessed}
+            isProcessing={isProcessing}
+            dataPreview={dataPreview}
+          
+            headerRowIndex={headerRowIndex}
+            setHeaderRowIndex={setHeaderRowIndex}
+          
+            isFileUploaded={isFileUploaded}
+
+            onStartProcessing={() => setIsProcessing(true)}
+            onStopProcessing={() => setIsProcessing(false)}
           />
+
         </div>
 
         <div className="flex-1 w-full">
